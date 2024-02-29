@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #61dafb;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #61dafb;
+            border-radius: 4px;
+            background-color: #444;
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            background-color: rgba(97, 218, 251, 0.8);
+            font-weight:bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color:rgba(97, 218, 251, 0.5)
+
+        }
+
+        .go-back {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #61dafb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .go-back:hover {
+            color:white;
+        }
+
+        .back-icon {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    </style>
+    <title>Contact Form</title>
+</head>
+<body>
+    <a href="index.html" class="go-back">
+        <i class="back-icon fas fa-arrow-left"></i> Go Back
+    </a>
+
+    <form action="https://formspree.io/f/xqkrbggw" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
